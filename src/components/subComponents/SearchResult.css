@@ -1,0 +1,138 @@
+.searchResult {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 70rem;
+    max-width: fit-content;
+    /* height: 23rem; */
+    padding: 4rem 0;
+    border-bottom: 1px solid #dddddd;
+}
+.searchResultImagesConatiner {
+    position: relative;
+    /* width: 30rem; */
+}
+.searchResultImage {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+}
+.searchResultImageTag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--clr-white);
+    padding: 0.4rem 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+.searchResultInfoContainer {
+    height: 100%;
+    display: flex;
+    padding: 2rem 0;
+    padding-top: 0;
+}
+.searchResultInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+.searchResultInfoBottom {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.rating {
+    font-weight: 600;
+}
+.reviews {
+    color: var(--clr-grey-6);
+}
+.searchResultInfoLocationHeading,
+.searchResultInfoExcerpt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--clr-grey-6);
+}
+.searchResultInfoTitle {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0.3rem 0;
+}
+.searchResultInfoTitleHR {
+    width: 3rem;
+    margin: 1rem 0;
+}
+.searchResultInfoRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.priceConatiner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: center; */
+}
+.actualPrice {
+    font-weight: 1.8rem;
+    color: var(--clr-grey-4);
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+}
+.salePrice {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+.totalPrice {
+    text-decoration: underline;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.priceContainerPrice {
+    display: flex;
+    align-items: center;
+}
+.night {
+    font-size: 1.4rem;
+}
+
+.searchResultInfoHeart {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+@media (max-width: 600px) {
+    .priceConatiner {
+        bottom: -2rem;
+    }
+    .searchResultInfoBottom {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 560px) {
+    .searchResultAbsolute {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .searchResult {
+        grid-template-columns: 1fr;
+    }
+}

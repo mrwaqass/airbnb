@@ -1,0 +1,25 @@
+.search {
+    position: absolute;
+    top: 4rem;
+    left: -8rem;
+    transition: var(--transition);
+    box-shadow: var(--dark-shadow);
+    background: var(--clr-white);
+    padding-bottom: 2rem;
+}
+.searchHeading,
+.searchInputArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchInputArea > input {
+    margin-right: 2rem;
+    width: 10rem;
+    border-radius: 5px;
+    outline-width: 0;
+    height: 4rem;
+}
+.searchInputArea > input:focus {
+    border: 1px solid var(--clr-primary);
+}
