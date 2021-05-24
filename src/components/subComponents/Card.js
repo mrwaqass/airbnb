@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Card({cardHeaderContent, cardFooterContent, cardContent}) {
     const {img, caption} = cardContent
@@ -8,14 +9,14 @@ function Card({cardHeaderContent, cardFooterContent, cardContent}) {
                 <CardHeader cardHeaderContent={cardHeaderContent} />
             )}
             <div className='cardContent'>
-                <a href='https:google.com'>
+                <Link to='/'>
                     <img
                         className='image'
                         src={`${img && img}`}
                         alt={`${caption && caption}`}
                         title={`${caption && caption}`}
                     />
-                </a>
+                </Link>
             </div>
             {cardFooterContent && (
                 <CardFooter cardFooterContent={cardFooterContent} />
